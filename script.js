@@ -20,9 +20,9 @@ function toggleLightDarkMode(isDark) {
   textBox.style.backgroundColor = isDark
     ? "rgb(255 255 255 / 50% )"
     : "rgb(255 255 255 / 50% )";
-  toggleIcon.children[0].textContent = isDark ? "Dark Mode" : "Dark Mode";
+  toggleIcon.children[0].textContent = isDark ? "Dark Mode" : "Light Mode";
   isDark
-    ? toggleIcon.children[1].classList.replace("fa-moon", "fa-sun")
+    ? toggleIcon.children[1].classList.replace("fa-sun", "fa-moon")
     : toggleIcon.children[1].classList.replace("fa-moon", "fa-sun");
   isDark ? imageMode("dark") : imageMode("light");
 }
